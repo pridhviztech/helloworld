@@ -21,8 +21,7 @@ platform :ios do
     cert(
       development: true,
       username: "pmuthuraju@ztech.io",
-      keychain_password: "soaadmin",
-      team_id: "NW4UKN7633"
+      #team_id: "NW4UKN7633"
     )
     #automatic_code_signing(
     #  use_automatic_signing: true,
