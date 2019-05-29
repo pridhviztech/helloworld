@@ -15,8 +15,6 @@
 
 default_platform(:ios)
 
-default_platform(:ios)
-
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
@@ -25,7 +23,16 @@ platform :ios do
     #  username: "pmuthuraju@ztech.io",
     #  keychain_password: "soaadmin"
     #)
-    match(app_identifier: "com.pridfastlane.test.app1", username: "pmuthuraju@ztech.io")
-    build_app(scheme: "test")
+    #match(app_identifier: "com.pridfastlane.test.app1", username: "pmuthuraju@ztech.io")
+    build_ios_app(
+      scheme: "Release",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: { 
+          "com.pridfastlane.test.app1" => "com.pridfastlane.test.app1",
+        }
+      }
+    )
+    #build_app(scheme: "test")
   end
 end
