@@ -24,7 +24,7 @@ platform :ios do
     #  keychain_password: "soaadmin"
     #)
     automatic_code_signing(
-      use_automatic_signing: true
+      use_automatic_signing: true,
       bundle_identifier: "com.pridfastlane.test.app1"
     )
     build_ios_app(
