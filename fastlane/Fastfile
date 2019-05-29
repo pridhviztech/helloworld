@@ -25,7 +25,7 @@ platform :ios do
     )
     gym(
       export_options: {
-        method: "app-store"
+        method: "app-store",
         provisioningProfiles: {
           "com.pridfastlane.test.app1": "com.pridfastlane.test.app1"
         }
