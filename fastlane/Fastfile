@@ -24,16 +24,16 @@ platform :ios do
     #  keychain_password: "soaadmin"
     #)
     #match(app_identifier: "com.pridfastlane.test.app1", username: "pmuthuraju@ztech.io")
-    build_ios_app(
-      scheme: "Release",
-      export_team_id: "NW4UKN7633",
-      export_options: {
-        method: "app-store",
-        provisioningProfiles: { 
-          "com.pridfastlane.test.app1" => "com.pridfastlane.test.app1",
-        }
-      }
-    )
-    #build_app(scheme: "test")
+    #build_ios_app(
+    #  scheme: "Release",
+    #  export_team_id: "NW4UKN7633",
+    #  export_options: {
+    #    method: "app-store",
+    #    provisioningProfiles: { 
+    #      "com.pridfastlane.test.app1" => "com.pridfastlane.test.app1",
+    #    }
+    #  }
+    #)
+    build_app(scheme: "test")
   end
 end
