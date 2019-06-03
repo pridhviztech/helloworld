@@ -29,7 +29,7 @@ platform :ios do
     #    }
     #  }
     #)
-    match(type: "appstore", app_identifier: "com.pridfastlane.test.app1")
+    match(type: "appstore", app_identifier: "com.pridfastlane.test.app1", readonly: is_ci)
     gym
   end
 end
