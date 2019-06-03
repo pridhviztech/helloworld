@@ -21,13 +21,11 @@ platform :ios do
     cert(
       development: true,
       username: "pmuthuraju@ztech.io",
-      #team_id: "NW4UKN7633"
     )
     gym(
       export_options: {
-        method: "app-store",
         provisioningProfiles: {
-          "com.pridfastlane.test.app1": "com.pridfastlane.test.app1"
+          "com.pridfastlane.test.app1": "match Development com.pridfastlane.test.app1"
         }
       }
     )
