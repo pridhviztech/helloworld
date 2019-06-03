@@ -18,16 +18,18 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
-    cert(
-      development: true,
-      username: "pmuthuraju@ztech.io",
-    )
-    gym(
-      export_options: {
-        provisioningProfiles: {
-          "com.pridfastlane.test.app1": "match Development com.pridfastlane.test.app1"
-        }
-      }
-    )
+    #cert(
+    #  development: true,
+    #  username: "pmuthuraju@ztech.io",
+    #)
+    #gym(
+    #  export_options: {
+    #    provisioningProfiles: {
+    #      "com.pridfastlane.test.app1": "match Development com.pridfastlane.test.app1"
+    #    }
+    #  }
+    #)
+    match(type: "appstore", app_identifier: "com.pridfastlane.test.app1")
+    gym
   end
 end
