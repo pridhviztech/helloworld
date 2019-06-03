@@ -20,7 +20,7 @@ platform :ios do
   lane :release do
     sigh(
       app_identifier: "com.pridfastlane.test.app1",
-      devlopment: true,
+      development: true,
       username: "pmuthuraju@ztech.io",
       provisioning_name: "match Development com.pridfastlane.test.app1",
       readonly: true
